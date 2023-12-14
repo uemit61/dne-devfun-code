@@ -56,7 +56,11 @@ def create_dive_finds(number_dives):
     # calling generate_find() and calculate_number_items() and 
     # then composing and returning the message and numbers.
 
-    raise NotImplementedError()
+    x=calculate_number_items(number_dives)
+    y=generate_find()
+    message = (f'In {number_dives} dives, you found {x} {y}')
+    return message
+
 
 
 def main():
@@ -68,8 +72,10 @@ def main():
     number_dives = int(number_dives.strip())
 
     # Create and display their finds
-    dive_finds_message = create_dive_finds(number_dives)
+
     print("\nHere are your finds, you lucky diver!\n")
+    dive_finds_message = create_dive_finds(number_dives)
+
     print(dive_finds_message)
 
 
