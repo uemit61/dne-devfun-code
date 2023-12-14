@@ -52,11 +52,11 @@ def create_dive_finds(number_dives):
 
     The message should include the diver's find and amounts.
     """
-    # TODO: Create a message telling a scuba diver what they found by 
-    # calling generate_find() and calculate_number_items() and 
-    # then composing and returning the message and numbers.
+    x=calculate_number_items(number_dives)
+    y=generate_find()
+    message = (f'In {number_dives} dives, you found {x} {y}')
 
-    raise NotImplementedError()
+    return message
 
 
 def main():
@@ -67,10 +67,10 @@ def main():
     number_dives = input("How many dives are you taking today?  ")
     number_dives = int(number_dives.strip())
 
-    # Create and display their finds
-    dive_finds_message = create_dive_finds(number_dives)
+
     print("\nHere are your finds, you lucky diver!\n")
-    print(dive_finds_message)
+    print(create_dive_finds(number_dives))
+
 
 
 if __name__ == '__main__':
