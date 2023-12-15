@@ -66,10 +66,9 @@ def main():
     # Prompt the user for how many dives they are going on
     number_dives = input("How many dives are you taking today?  ")
     number_dives = int(number_dives.strip())
-
-
+    z = create_dive_finds(number_dives)
     print("\nHere are your finds, you lucky diver!\n")
-    print(create_dive_finds(number_dives))
+    print(z)
 
 
 
