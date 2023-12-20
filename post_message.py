@@ -5,7 +5,7 @@ access_token = 'MTNkNzk4MWUtZWE3Zi00YzNhLWE3ZjktYzY3NmRkZjJjMGVhNDNkNWE1N2UtMjYy
 
 httpHeaders = { 'Content-type': 'application/json', 'Authorization': 'Bearer ' + access_token }
 
-body = { 'toPersonEmail': 'tofrench@webex.bot', 'text': 'Hello' }
+body = {'roomID':' Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vZmVlZDYwMDAtOWRmMi0xMWVlLTlkMzEtODllYzFhYzU5ZDRm','toPersonEmail': 'U.Yildirim@edu.bbq.de', 'text': 'Hello' }
 
 response = requests.post( url = apiUrl, json = body, headers = httpHeaders )
 
