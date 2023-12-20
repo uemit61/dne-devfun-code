@@ -5,7 +5,12 @@ access_token = 'MTNkNzk4MWUtZWE3Zi00YzNhLWE3ZjktYzY3NmRkZjJjMGVhNDNkNWE1N2UtMjYy
 
 httpHeaders = { 'Content-type': 'application/json', 'Authorization': 'Bearer ' + access_token }
 
-body = {'roomID':' Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vZmVlZDYwMDAtOWRmMi0xMWVlLTlkMzEtODllYzFhYzU5ZDRm','toPersonEmail': 'U.Yildirim@edu.bbq.de', 'text': 'Hello' }
+body = { 
+    "roomId": "Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vZmVlZDYwMDAtOWRmMi0xMWVlLTlkMzEtODllYzFhYzU5ZDRm",
+   
+    "text": "Hello World 2 ",
+    
+    "personEmail": "hopes61@icloud.com"}
 
 response = requests.post( url = apiUrl, json = body, headers = httpHeaders )
 
