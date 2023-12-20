@@ -16,3 +16,9 @@ print(response.text)
 deck = response.json()
 deck_id = deck['deck_id']
 print(deck_id)
+
+url = "https://deckofcardsapi.com/api/deck/rs8wefp2o39z/draw/?count=3"
+
+response = requests.request("GET", url, headers=headers, data=payload)
+
+print(response.text)
