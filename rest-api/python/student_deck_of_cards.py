@@ -19,6 +19,6 @@ print(deck_id)
 
 url = "https://deckofcardsapi.com/api/deck/rs8wefp2o39z/draw/?count=3"
 
-response = requests.request("GET", url, headers=headers, data=payload)
+response = requests.request("GET", url, headers=headers)
 
 print(response.text)
