@@ -15,6 +15,6 @@ draw_response = requests.get(f'https://deckofcardsapi.com/api/deck/{deck_id}/dra
 draw = draw_response.json()
 
 for i,card in enumerate(draw['cards']):
-    print(f"Card {i} is {card['value']} of {card['suit']}")
+    print(f"Card {i+1} is {card['value']} of {card['suit']}")
 
 
