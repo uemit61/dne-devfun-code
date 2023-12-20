@@ -10,3 +10,5 @@ response = requests.get( url = apiUrl, headers = httpHeaders, params = queryPara
 
 print( response.status_code )
 print( response.text )
+
+# This is a Request and not a Response :)
